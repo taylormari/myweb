@@ -1,0 +1,279 @@
+
+body,
+body * {
+  background:      unset;
+  outline:    0.0rem solid hsla(1000, 0%, 0%, 1) ;
+  margin:          unset;
+  box-sizing:      unset;
+  padding:         unset;
+  color:           unset;
+  text-decoration: unset;
+}
+
+div {
+  display: block;
+}
+
+
+header {
+  padding: none;
+
+}
+
+.navbar {
+  
+  background-color: none;
+  display: flex-start;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.leftnav {
+   /* illustration design apparel books about*/
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    line-height: 1.6em;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-style: normal;
+
+    display:flex;
+   /* margin-right: auto;*/
+    
+}
+
+ul {
+  list-style: none;
+  margin: 5px;
+  margin-top: 2px;
+  /*padding: 5px;*/
+}
+
+li {
+
+  padding: 2%;
+}
+
+li a {
+  display: flex;
+  width: ;
+  /*padding: 30%;*/
+}
+
+li a:hover {
+  color: #008F32;
+  cursor: pointer;
+  }
+
+#logo {
+
+  position:relative;
+  display:flex;
+  
+  margin-top: 0;
+  margin-right: 1%;
+  margin-left: auto;
+  padding: none;
+}
+
+/*-------------mobile menu----------------*/
+
+.dropbtn {
+  
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  cursor: default;
+ font-family: 'Roboto Mono', monospace;
+}
+
+.dropbtn:hover {
+  background-color: #008F32;
+}
+
+.dropdown a:hover {background-color: #008F32;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.mobile_menu {
+  position: relative;
+  display: none;
+}
+
+.menu-content {
+  display: none; /* to not show before clicking */
+  position: relative; /* if absolute, will overlap text below, hover over by setting z-index to 1*/
+  background-color: white;
+  width: 93%; /*to set width to size of button*/
+  overflow: auto; 
+  box-shadow: none;
+  z-index: 0;
+  align-content: center;
+}
+
+.menu-content a {
+  color: black;
+  padding: 4px;
+  text-decoration: none;
+  display: block;
+  
+
+}
+
+.dropdown a:hover {background-color: #008F32;}
+
+.show {display: block;}
+
+h2, p {
+  margin-left: 10%;
+  padding-left: 30px;
+}
+
+/*----------------image formatting----------------*/
+
+main {
+  display: block;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+
+
+#bannerimg {
+  width: 50vw;
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
+/*---------------image zoom--------------------*/
+
+.myImages {
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+  max-width: 300px;
+}
+
+.myImages:hover {opacity: 0.7;}
+
+#medimg {
+  max-width:450px;
+}
+
+#largeimg {
+  max-width:600px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-height:80%;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 900px;
+  text-align: center;
+  font-family: 'Roboto Mono', 'monospace';
+  font-size: 0.7em;
+  font-style: italic;
+  color: #ccc;
+  padding: 10px 0;
+  height: 40px;
+}
+
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #D5D5D5;
+  font-size: 60px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+/*------------------------------------------*/
+
+@media only screen and (max-width: 750px) {
+
+img
+
+
+  .show {
+    display: block;
+  }
+
+   .leftnav {
+    display: none;
+  }
+
+  .mobile_menu {
+    display: block;
+    text-align: center;
+    
+  }
+  .menu-content {
+    position: relative;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    min-width: 160px;
+    background-color: white;
+
+  }
+
+  .menu-content a:hover {
+    color: #008F32;
+    cursor: cell;
+  }
+}
